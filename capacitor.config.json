@@ -1,0 +1,21 @@
+{
+  "appId": "com.ncorrell.lumen",
+  "appName": "Lumen",
+  "webDir": "www",
+  "ios": {
+    "contentInset": "never",
+    "backgroundColor": "#000000",
+    "scrollEnabled": true,
+    "limitsNavigationsToAppBoundDomains": true
+  },
+  "plugins": {
+    "SplashScreen": {
+      "launchShowDuration": 600,
+      "backgroundColor": "#14100C",
+      "showSpinner": false
+    },
+    "LocalNotifications": {
+      "iconColor": "#E8A317"
+    }
+  }
+}

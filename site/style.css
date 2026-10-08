@@ -1,0 +1,42 @@
+@font-face{font-family:"IM Fell English";src:url("play/fonts/IMFellEnglish-Regular.ttf") format("truetype");font-display:swap}
+@font-face{font-family:"IM Fell English";src:url("play/fonts/IMFellEnglish-Italic.ttf") format("truetype");font-style:italic;font-display:swap}
+@font-face{font-family:"Atkinson Hyperlegible";src:url("play/fonts/AtkinsonHyperlegible-Regular.ttf") format("truetype");font-display:swap}
+
+:root{
+ --bg:#F4EEE2;--card:#FFFDF8;--ink:#1C1814;--ink2:#5A4E40;--line:rgba(60,48,36,.16);
+ --tint:#9A5B00;--btn:#B26B00;--btnink:#FFF;
+ --c1:#C8243A;--c2:#2350B8;--c3:#E8A317;--c4:#1E9A5E;--c5:#7B3FA8;
+}
+@media (prefers-color-scheme:dark){:root{
+ --bg:#14100C;--card:#1F1A15;--ink:#F3E6C8;--ink2:#C9B98F;--line:rgba(243,230,200,.14);
+ --tint:#E8B54A;--btn:#E8A317;--btnink:#1C1814;
+}}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.6 "Atkinson Hyperlegible",-apple-system,system-ui,sans-serif}
+a{color:var(--tint)}
+.wrap{max-width:760px;margin:0 auto;padding:0 16px}
+.glass{height:8px;background:linear-gradient(90deg,var(--c1) 0 20%,var(--c2) 20% 40%,var(--c3) 40% 60%,var(--c4) 60% 80%,var(--c5) 80%)}
+header.top{padding:18px 0;border-bottom:1px solid var(--line)}
+header.top .wrap{display:flex;align-items:baseline;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.brand{font-family:"IM Fell English",Georgia,serif;font-size:28px;color:var(--ink);text-decoration:none}
+nav a{margin-left:16px;text-decoration:none;font-size:15px}
+nav a:first-child{margin-left:0}
+h1,h2,h3{font-family:"IM Fell English",Georgia,serif;font-weight:400;line-height:1.15}
+h1{font-size:clamp(44px,10vw,72px);margin:40px 0 4px}
+h2{font-size:30px;margin:44px 0 10px}
+h3{font-size:22px;margin:26px 0 4px}
+.tagline{font-family:"IM Fell English",Georgia,serif;font-style:italic;font-size:22px;color:var(--ink2);margin:0 0 24px}
+.lead{font-size:19px}
+.btns{display:flex;flex-wrap:wrap;gap:12px;margin:24px 0 8px}
+.btn{display:inline-block;padding:13px 22px;border-radius:12px;background:var(--btn);color:var(--btnink);font-weight:700;text-decoration:none}
+.btn.ghost{background:transparent;color:var(--ink);border:1px solid var(--line);font-weight:400}
+.note{color:var(--ink2);font-size:15px}
+.shots{display:flex;gap:14px;overflow-x:auto;padding:8px 0 16px;margin:24px 0 0;scroll-snap-type:x mandatory}
+.shots img{width:200px;height:auto;flex:none;border-radius:22px;border:1px solid var(--line);scroll-snap-align:start}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:6px 20px 18px;margin:16px 0}
+ul{padding-left:22px}
+li{margin:4px 0}
+.updated{color:var(--ink2);font-size:15px;margin-top:-4px}
+footer{margin:56px 0 0;padding:22px 0 40px;border-top:1px solid var(--line);color:var(--ink2);font-size:15px}
+footer a{margin-right:16px}
